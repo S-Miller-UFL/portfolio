@@ -1,0 +1,201 @@
+/*variables*/
+:root
+{
+    --text_color: #bdbdbd;
+    --link_color: #4e8eee;
+    --background_color: #0a1233;
+    --cell_color: #293b8a;
+
+}
+
+/*all elements*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*scrolling behavior*/
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*main body*/
+body
+{
+    font-family: 'Share Tech', sans-serif;
+    background-color: var(--background_color);
+}
+
+/*hyperlinks*/
+a
+{
+    color: var(--link_color);
+    text-decoration:none;
+}
+
+/*----------NAV SECTION----------*/
+
+/* navbar*/
+nav
+{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+}
+
+/*nav section left side*/
+nav .left a
+{
+    color: var(--text_color);
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+/*nav section right side*/
+nav .right a
+{
+    color: var(--text_color);
+    font-size: 25px;
+    margin: 0 10px;
+
+}
+
+/*nav section email button*/
+nav .right a:last-child
+{
+    color: var(--background_color);
+    background-color: var(--text_color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+
+/*nav section individual span*/
+nav .right a span
+{
+    margin-left: 2px;
+
+}
+
+/*----------PROJECTS SECTION----------*/
+
+/*projects*/
+.projects_section
+{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+/*projects header*/
+.projects_section h2
+{
+    text-align: center;
+    font-size: 35px;
+    color: var(--text_color);
+}
+
+/*projects text*/
+.projects_section .text
+{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text_color);
+}
+
+/*projects verilog header*/
+.projects_section .project_listing h1
+{
+    margin-bottom: 20px;
+    color: var(--text_color);
+}
+
+/*projects verilog text*/
+.projects_section .project_listing .text
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/*project links hypertext*/
+.projects_section .text .links a
+{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+/*projects C image*/
+.projects_section .project_listing .text img
+{
+    width: 450px;
+}
+
+/*----------DEVICE CONFIGURATION----------*/
+
+/*for devices only 850 pixels wide*/
+@media (max-width: 850px) 
+{
+    .hero_section .text h2
+    {
+        font-size: 35px;
+    }
+    
+}
+
+/*for devices only 740 pixels wide*/
+@media (max-width: 740px) 
+{
+    .hero_section .text h2
+    {
+        flex-direction: column-reverse;
+    }
+    .hero_section .headshot img
+    {
+        width:200px;
+    }
+    
+}
+
+/*for devices only 600 pixels wide*/
+@media (max-width: 600px)
+{
+    /*navbar*/
+    nav
+    {
+        padding:0 20px;
+    }
+    nav .right a 
+    {
+        font-size: 22px;
+    }
+    nav .right a:last-child
+    {
+        color: var(--text_color);
+        background-color: transparent;
+        padding: 0;
+    }   
+    nav .right a span 
+    {
+        display: none;
+    }
+
+    /*section 1: hero*/
+    .hero_section
+    {
+        padding: 0 20px;
+    }
+    .hero_section .text h2 
+    {
+        font-size: 30px;
+    }
+}
