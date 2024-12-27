@@ -45,10 +45,36 @@
         <section class = "hero_section">
             <div class = "text">
                 <h2>Hi! I'm Steven! A Computer Engineer!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                    adipisicing elit. Iusto in quae recusandae adipisci a 
-                    eaque eos earum, quod consequatur dignissimos alias sed 
-                    dolores exercitationem. Ipsa enim ab cum temporibus tenetur?
+                <p>
+                    I graduated from the University of Florida in 2024 with a bachelors degree
+                    in Computer Engineering. I seek to understand computer systems, how they work, and how
+                    to solve problems with them.
+                    <br>
+                    <br>
+                    My most impactful, and first, experience with computers was sticking coins inside of my moms iMac cd drive,
+                    thinking they would shoot out like a slot machine.
+                    <br>
+                    The technician had to explain to 5 year old me that they would not in fact shoot out like a slot machine...
+                    <br>
+                    <br>
+                    Ever since then, ive been fascinated with the inner workings of computers and how they work.
+                    <br>
+                    <br>
+                    The second most impactful experience was when I took a C++ course in high school, my professor explained to me that
+                    C and C++ were commonly used to control basically every inner working of a computer. From the software we use to compile our code,
+                    down to the bios chip that gets kicked on during boot.
+                    <br>
+                    <br>
+                    I've always had an obsession with the lower layers of a computer system. In particular, how the various peripherals
+                    inside a computer communicate with eachother.
+                    <br>
+                    <br>
+                    For my senior project, I got to partially understand this as we attempted to implement an NES onto an FPGA
+                    to be given to a video game museum.
+                    <br>
+                    <br>
+                    But there is still this hunger for knowledge about embedded components that I seek to satisfy, these projects
+                    serve as an attempt to do this. And maybe satisfy some other hungers as well. Such as for signals, and PCB design.
                 </p>
                 <!-- 
                 <div class="links">
@@ -58,11 +84,12 @@
                     <a href="#experience">
                         <span>Experience</span>
                     </a>
-                    <a href="#top projects">
-                        <span>Top Projects</span>
+                -->
+                    <a href="#resume">
+                        <span>Click here to jump to my resume!</span>
                     </a>
                 </div>
-                -->
+                
             </div>
 
             <div class = "headshot">
@@ -101,17 +128,21 @@
                     <img src="images/cpp.png" alt="C++ logo">
                     <a href="pages/cpp/cpp.html" target="_blank"rel="noopener noreferrer">C++</a>
                 </div>
-
+                <!--
                 <div class = "cell">
                     <img src="images/altera.png" alt="Altera logo">
                     <a href="pages/fpga/fpga.html" target="_blank"rel="noopener noreferrer">Altera/Intel FPGA's</a>
                 </div>
-
+                -->
                 <div class = "cell">
                     <img src="images/matlab.png" alt="Matlab logo">
                     <a href="pages/matlab/matlab.html" target="_blank"rel="noopener noreferrer">MATLAB</a>
                 </div>
 
+                <div class = "cell">
+                    <img src="images/pcb.png" alt="PCB logo">
+                    <a href="pages/pcb/pcb.html" target="_blank"rel="noopener noreferrer">PCB's</a>
+                </div>
             </div>
         </section>
         <!--Experience-->
@@ -186,14 +217,15 @@
             <div class = "project_listing">
                 <h1>Verilog</h1>
                         <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                            My top project in terms of verilog is a PWM controller.
+                            This design works by having an 8 bit counter switch between "1" and "0"
+                            via a 2 input mux.
+                            If you need to change the frequency at which the PWM outputs, you can latch
+                            a new value into the counter and reset the device for it to take effect.
                             <div class="links">
                                 <a href="pages/verilog/verilog.html" target="_blank"rel="noopener noreferrer">Click here to see all my verilog projects!</a>
                             </div>
-                            <img src="placeholder.png" alt="placeholder.png">
+                            <img src="pages/verilog/images/verilog.png" alt="placeholder.png">
                         </div>
 
                 </a>
@@ -202,45 +234,55 @@
             <div class = "project_listing">
                 <h1>VHDL</h1>
                     <div class = "text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laudantium accusamus quae unde cupiditate iusto architecto 
-                        est expedita molestiae. 
-                        Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                        My top project in terms of VHDL, and the one im most proud of for all these projects,
+                        is a 32 bit MIPS based multi-cycle CPU.
+                        It has memory mapped IO via its own custom memory decoding logic, it can jump, branch, multiply,
+                        perform logical operations, and features its own built in ram. No external ram necessary!
                         <div class="links">
                             <a href="pages/vhdl/vhdl.html" target="_blank"rel="noopener noreferrer">Click here to see all my VHDL projects!</a>
                         </div>
-                        <img src="placeholder.png" alt="placeholder.png">
+                        <img src="pages/vhdl/images/mips_board.png" alt="placeholder.png">
                     </div>
                
             </div>
             <div class = "project_listing">
                 <h1>C</h1>
                     <div class = "text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laudantium accusamus quae unde cupiditate iusto architecto 
-                        est expedita molestiae. 
-                        Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                        My top project for C is my very own system call library.
+                        <br>
+                        <br>
+                        One of the most interesting things about computers is our use of operating systems.
+                        But how does a program get access to resources through the operating system?
+                        I seek to understand this by writing my own system calls library in linux.
                         <div class="links">
                             <a href="pages/c/c.html" target="_blank"rel="noopener noreferrer">Click here to see all my C projects!</a>
                         </div>
-                        <img src="placeholder.png" alt="placeholder.png">
+                        <img src="pages/c/images/syscall.png" alt="placeholder.png">
                     </div>
                
             </div>
             <div class = "project_listing">
                 <h1>C++</h1>
                     <div class = "text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laudantium accusamus quae unde cupiditate iusto architecto 
-                        est expedita molestiae. 
-                        Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                        Whats better than making any device run DOOM?
+                        Making it so DOOM's file format can be mounted as a file system in linux of course!
+                        <br>
+                        <br>
+                        This C++ project uses the FUSE library in linux, and my own custom library, to treat
+                        DOOM WAD(Wheres All the Data?) files as their own file directories.
+                        This way, you can send a WAD file to anyone, and they can mount it, and perform read,
+                        write, copy, and other file operations on it.
+                        <br>
+                        <br>
+                        Now thats portability!
                         <div class="links">
                             <a href="pages/cpp/cpp.html" target="_blank"rel="noopener noreferrer">Click here to see all my C++ projects!</a>
                         </div>
-                        <img src="placeholder.png" alt="placeholder.png">
+                        <img src="pages/cpp/images/wad.png" alt="placeholder.png">
                     </div>
                
             </div>
+            <!--
             <div class = "project_listing">
                 <h1>FPGA's</h1>
                     <div class = "text">
@@ -251,30 +293,63 @@
                         <div class="links">
                             <a href="pages/fpga/fpga.html" target="_blank"rel="noopener noreferrer">Click here to see all my FPGA projects!</a>
                      </div>
-                     <img src="placeholder.png" alt="placeholder.png">
+                     <img src="pages/fpga/images/mister.png" alt="placeholder.png">
                   </div>
-                    
-               
             </div>
+            -->
             <div class = "project_listing">
                 <h1>MATLAB</h1>
                     <div class = "text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laudantium accusamus quae unde cupiditate iusto architecto 
-                        est expedita molestiae. 
-                        Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                        During my studies of signals and systems, I learned that
+                        you can replicate CRT television like effects using simple filter designs.
+                        <br>
+                        <br>
+                        On the left is the original image of niko, the middle image is that
+                        same image passed through a high pass filter, giving it a grainy and distorted feeling
+                        and the right image is the original image passed through a low pass filter. Giving it
+                        a blurry feeling.
                         <div class="links">
                             <a href="pages/matlab/matlab.html" target="_blank"rel="noopener noreferrer">Click here to see all my MATLAB projects!</a>
                     </div>
-                    <img src="placeholder.png" alt="placeholder.png">
+                    <img src="pages/matlab/images/matlab.png" alt="placeholder.png">
+               
+            </div>
+            <div class = "project_listing">
+                <h1>PCB Design</h1>
+                    <div class = "text">
+                        After I took a microprocessor class, I became fascinated with microcontrollers.
+                        <br>
+                        <br>
+                        So I thought "Why not make my own custom microcontroller PCB?" and so I did!
+                        <br>
+                        <br>
+                        This specific PCB youre looking at runs an ARM based STM32F072 microcontroller.
+                        <br>
+                        It contains the actual microcontroller itself, a USB to UART converter, a dedicated
+                        debugging port labelled "SWD", 
+                        <br>
+                        and 4 ports where you can plug in "breakout" boards.
+                    
+                        <div class="links">
+                            <a href="pages/pcb/pcb.html" target="_blank"rel="noopener noreferrer">Click here to see all my PCB design projects!</a>
+                    </div>
+                    <img src="pages/pcb/images/pcb.png" alt="placeholder.png">
                
             </div>
             
         </section>
 
-        <!--Connect with me!-->
-        <section>
-
+        <!--resume-->
+        <section id = "resume" class = "projects_section">
+            <h2>My Resume</h2>
+            <br>
+            <div class = "links">
+                <a href="resumes/resume.pdf"> If you are a private company click here!</a>
+            </div>
+            <br>
+            <div class = "links">
+                <a href="resumes/resume-federal.pdf"> If you work on behalf of the United States federal government click here!</a>
+            </div>
         </section>
 
 

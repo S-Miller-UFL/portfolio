@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My portfolio!</title>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="../../index.html">Steven Miller</a>
+        </div>
+        <div class="right">
+            <!--github-->
+            <a href="https://github.com/S-Miller-UFL?tab=repositories" target="_blank" rel="noopener noreferrer">
+
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <!--linkedin-->
+            <a href="https://www.linkedin.com/in/steven-miller-ufl/" target="_blank"rel="noopener noreferrer">
+                
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+            <!--email-->
+            <a href="mailto:steven.miller.040301@gmail.com">
+                
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!--Projects-->
+        <section id = "projects" class = "projects_section">
+            <h2>My projects with PCB Design</h2>
+            <div class = "project_listing">
+                <h1>STM32F072 Board</h1>
+                        <div class = "text">
+                            After I took a microprocessor class, I became fascinated with microcontrollers.
+                            <br>
+                            <br>
+                            So I thought "Why not make my own custom microcontroller PCB?" and so I did!
+                            <br>
+                            <br>
+                            This specific PCB youre looking at runs an ARM based STM23F072 microcontroller.
+                            <br>
+                            It contains the actual microcontroller itself, a USB to UART converter, a dedicated
+                            debugging port labelled "SWD", 
+                            <br>
+                            and 4 ports where you can plug in "breakout" boards.
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/STM32F072_Board" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../pcb/images/pcb.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <div class = "project_listing">
+                <h1> ICM-20948 Breakout Board</h1>
+                        <div class = "text">
+                            An MCU, admittedly, is not that useful on its own without
+                            some kind of peripheral device(s).
+                            <br>
+                            <br>
+                            I thought that a great first start would be some way to make
+                            some inertial measurement. And so, I decided to create an IMU breakout board.
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/ICM20948_board" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../pcb/images/motion.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <div class = "project_listing">
+                <h1> IS61LV256AL-10TLI Breakout Board</h1>
+                        <div class = "text">
+                            While the STM32 has memory, It's very limited.
+                            It only has 16 kilo-bytes of ram, and 128 kilo-bytes of flash memory.
+                            <br>
+                            <br>
+                            So, I decided to expand it myself by using a breakout board!
+                            Now, we have plenty of memory to work with!
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/SRAM_board" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../pcb/images/sram.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <!--
+            <div class = "project_listing">
+                <h1>lorem ipsum</h1>
+                        <div class = "text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium accusamus quae unde cupiditate iusto architecto 
+                            est expedita molestiae. 
+                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../../placeholder.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <div class = "project_listing">
+                <h1>lorem ipsum</h1>
+                        <div class = "text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium accusamus quae unde cupiditate iusto architecto 
+                            est expedita molestiae. 
+                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../../placeholder.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <div class = "project_listing">
+                <h1>lorem ipsum</h1>
+                        <div class = "text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium accusamus quae unde cupiditate iusto architecto 
+                            est expedita molestiae. 
+                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../../placeholder.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            -->
+            
+        </section>
+
+        <!--Connect with me!-->
+        <section>
+
+        </section>
+
+
+    </main>
+    
+</body>
+</html>

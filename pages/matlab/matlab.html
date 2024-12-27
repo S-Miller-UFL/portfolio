@@ -44,21 +44,73 @@
         <section id = "projects" class = "projects_section">
             <h2>My projects with MATLAB</h2>
             <div class = "project_listing">
-                <h1>lorem ipsum</h1>
+                <h1>CRT Filter</h1>
                         <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                        During my studies of signals and systems, I learned that
+                        you can replicate CRT television like effects using simple filter designs.
+                        <br>
+                        <br>
+                        On the left is the original image of niko, the middle image is that
+                        same image passed through a high pass filter, giving it a grainy and distorted feeling
+                        and the right image is the original image passed through a low pass filter. Giving it
+                        a blurry feeling.
                             <div class="links">
-                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                                <a href="https://github.com/S-Miller-UFL/CRT_filter" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
                             </div>
-                            <img src="../../placeholder.png" alt="placeholder.png">
+                            <img src="../matlab/images/matlab.png" alt="placeholder.png">
                         </div>
 
                 </a>
                
             </div>
+            <div class = "project_listing">
+                <h1>DFT and Music</h1>
+                        <div class = "text">
+                            When studying how efficient fourier transform algorithms are,
+                            its important that you understand the context in which theyre used.
+                            <br>
+                            <br>
+                            I decided to study how efficient the FFT (Fast Fourier Transform) was over
+                            the DFT (Discrete Fourier Transform) by implementing both in MATLAB and applying them
+                            to a song to see how long they would take.
+                            <br>
+                            <br>
+                            And what better song than feint operation from virtua cop 3? a classic!
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/DFT" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../matlab/images/vc3.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <div class = "project_listing">
+                <h1>DTFT of Filters</h1>
+                        <div class = "text">
+                            When designing filters, its often best you perform a fourier transform
+                            of the filter itself in order to make sure its actually targeting the frequencies you want
+                            to remove or amplify.
+                            <br>
+                            <br>
+                            To properly analyze a filter, I used a very noisy audio file, and designed a series
+                            of band stop filters in order to attempt to clean it.
+                            However, this required I perform a DTFT on the filters themselves to make sure they were actually
+                            working.
+                            <br>
+                            <br>
+                            The result was that the recovered audio was perfectly serviceable!
+                            You could say that were the right men in the right place ;-)
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/DTFT" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../matlab/images/dtft.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <!--
             <div class = "project_listing">
                 <h1>lorem ipsum</h1>
                         <div class = "text">
@@ -107,39 +159,7 @@
                 </a>
                
             </div>
-            <div class = "project_listing">
-                <h1>lorem ipsum</h1>
-                        <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
-                            <div class="links">
-                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
-                            </div>
-                            <img src="../../placeholder.png" alt="placeholder.png">
-                        </div>
-
-                </a>
-               
-            </div>
-            <div class = "project_listing">
-                <h1>lorem ipsum</h1>
-                        <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
-                            <div class="links">
-                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
-                            </div>
-                            <img src="../../placeholder.png" alt="placeholder.png">
-                        </div>
-
-                </a>
-               
-            </div>
-            
+            -->
         </section>
 
         <!--Connect with me!-->

@@ -44,21 +44,61 @@
         <section id = "projects" class = "projects_section">
             <h2>My projects with C</h2>
             <div class = "project_listing">
-                <h1>lorem ipsum</h1>
+                <h1>Linux System Call Library</h1>
                         <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
+                            A System call allows a program to access resources via the operating system.
+                            <br>
+                            <br>
+                            My specific system call library allows a user program to write to the diagnostic
+                            messaging system in linux. Which is fancy for the process log.
                             <div class="links">
-                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                                <a href="https://github.com/S-Miller-UFL/System_Calls_Library" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
                             </div>
-                            <img src="../../placeholder.png" alt="placeholder.png">
+                            <img src="../c/images/syscall.png" alt="placeholder.png">
                         </div>
 
                 </a>
                
             </div>
+            <div class = "project_listing">
+                <h1>Keyboard Synthesizer</h1>
+                        <div class = "text">
+                            For this project, we were tasked with converting key presses
+                            into an audible signal using our atmel ATXMEGA128A1U microcontroller and its
+                            onboard DAC.
+                            <br>
+                            <br>
+                            I had to use a sinewave table in order to convert the key presses into 
+                            an audible signal for the digital to analog converter.
+                            <br>
+                            <br>
+                            However, because interrupts were too slow, I had to use DMA in order to transfer
+                            the entire sinewave table into memory fast enough to play the sounds.
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/Synthesizer" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../c/images/dacdma.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+               
+            </div>
+            <div class = "project_listing">
+                <h1>Accelerometer</h1>
+                        <div class = "text">
+                            For this task, I used SPI to communicate with an Accelerometer
+                            using an ATXMEGA128A1U.
+                            I then used serial plot in order to send the captured data over
+                            USART to my pc.
+                            <div class="links">
+                                <a href="https://github.com/S-Miller-UFL/Accelerometer" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
+                            </div>
+                            <img src="../c/images/accel.png" alt="placeholder.png">
+                        </div>
+
+                </a>
+            </div>
+            <!--
             <div class = "project_listing">
                 <h1>lorem ipsum</h1>
                         <div class = "text">
@@ -107,41 +147,9 @@
                 </a>
                
             </div>
-            <div class = "project_listing">
-                <h1>lorem ipsum</h1>
-                        <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
-                            <div class="links">
-                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
-                            </div>
-                            <img src="../../placeholder.png" alt="placeholder.png">
-                        </div>
-
-                </a>
-               
-            </div>
-            <div class = "project_listing">
-                <h1>lorem ipsum</h1>
-                        <div class = "text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus quae unde cupiditate iusto architecto 
-                            est expedita molestiae. 
-                            Ratione, velit beatae laboriosam veritatis fugiat itaque?
-                            <div class="links">
-                                <a href="https://github.com/S-Miller-UFL" target="_blank"rel="noopener noreferrer">Click here to see the github repository!</a>
-                            </div>
-                            <img src="../../placeholder.png" alt="placeholder.png">
-                        </div>
-
-                </a>
-               
-            </div>
-            
+            -->
         </section>
-
+        
         <!--Connect with me!-->
         <section>
 
