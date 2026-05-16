@@ -3,7 +3,7 @@
 {
     --text_color: #bdbdbd;
     --link_color: #4e8eee;
-    --background_color: #0a1233;
+    --background_color: #050816;
     --cell_color: #293b8a;
 
 }
@@ -25,7 +25,7 @@ html
 /*main body*/
 body
 {
-    font-family: 'Share Tech', sans-serif;
+    font-family: Arial; 
     background-color: var(--background_color);
 }
 
